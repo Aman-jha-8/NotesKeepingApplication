@@ -1,0 +1,179 @@
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+  .note-card textarea {
+    width: 100%;
+    height: 100px;
+    border: none;
+    resize: none;
+  }
+
+  .note-card .delete-note {
+    color: red;
+    cursor: pointer;
+  }
+
+  .note-card .expand-note {
+    color: blue;
+    cursor: pointer;
+    display: none;
+  }
+
+  .note-card:hover .expand-note {
+    display: block;
+  } */
+
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .note-card {
+    background-color: #fafa01;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  }
+
+  .note-card h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+  }
+
+  .note-card .note-content,
+  .note-card .note-textarea {
+    display: none;
+  }
+
+  .note-card .note-content.show,
+  .note-card .note-textarea.show {
+    display: block;
+  }
+
+  .note-card .note-content {
+    margin-bottom: 10px;
+  }
+
+  .note-card .delete-note {
+    cursor: pointer;
+    color: #f00;
+  }
+
+  .note-card .expand-note {
+    cursor: pointer;
+    color: #555;
+  }
+
+  .note-card textarea {
+    width: 100%;
+  }
+
+
+  .bottomconnect {
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .container-link {
+    display: flex;
+  }
+
+  .element-end {
+    margin: 0 0.5rem;
+    background-color: rgb(11, 136, 214); /* For Facebook, Twitter, and LinkedIn icons */
+    color: white;
+    border-radius: 50%;
+    padding: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .element-end.gh {
+    background-color: black; /* For GitHub icon */
+  }
+
+  .element-end.lc {
+    background-color: rgb(255, 255, 255); /* For LeetCode icon */
+    width: 47px; /* Adjust the width to your desired size */
+    height: 47px; /* Adjust the height to your desired size */
+  }
+
+  .element-end.lc img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Adjust the object-fit property to control how the image fills the container */
+  }
+
+
+  .element-end a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .element-end:hover {
+    transform: scale(1.2);
+  }
+
+  .element-end:hover a {
+    color: white;
+  }
+
+  .element-end.wa {
+    background-color: green; /* For WhatsApp icon */
+  }
+
+  .element-end.wa a {
+    width: 30px;
+    height: 30px;
+  }
+
+  .element-end.wa i {
+    font-size: 18px;
+  }
+
+  .element-end.wa:hover {
+    background-color: darkgreen; /* Hover background color for WhatsApp icon */
+  }
+
+
+  .strip-black {
+    background-color: black;
+    padding: 10px 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-top: 18px;
+  }
+
+  .strip-black p {
+    color: white;
+    margin: 0;
+  }
+
+  .last-foot {
+    margin-top: auto;
+  }
